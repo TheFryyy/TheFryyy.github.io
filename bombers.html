@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<title>Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="homepage.html" class="w3-bar-item w3-button"><b>P</b>ortfolio</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="projects.html" class="w3-bar-item w3-button">Projects</a>
+      <a href="about.html" class="w3-bar-item w3-button">About</a>
+    </div>
+  </div>
+</div></br></br>
+
+<div class="w3-display-container w3-padding">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Bombers</h3>
+    <p>Bombers is a coop game in which you have to run through a path with obstacle by making passes with a bomb to avoid it to explode.</p></br>
+    <div  style= "padding-left: 100px;">
+        <img class="w3-image w3-round " src="Bombers_player.png" alt="Bombers" width="200" height="150">
+    </div>
+    <div style="padding-left: 550px;" class="w3-display-left">
+        <p><i class="w3-text-grey">
+            The bomb can be passed hand by hand or at distance by throwing it.</br>
+            I used trigger zones for that. It has a timer on it which and I check each frame if the timer is under 0</br>
+            (Now, I would use event to handle that but I wasn't aware of that at the moment)
+        </i></p>
+    </div>
+</div>
+
+
+
+</br></br></br></br></br>
+
+<div class="w3-display-container w3-padding">
+    <img class="w3-image w3-round " src="Bombers_step1.gif" alt="Bombers" width="500" height="400">
+    <div style="padding-left: 550px;" class="w3-display-left">
+        <p><i class="w3-text-grey">
+            The first step is to cross projectiles and avoid them.</br>
+            So I used C# coroutine to spawn projectiles with a random amount of time</br>
+            I used Trigger to teleport the touched player to the position of an empty</br>object placed at the beginning
+        </i></p>
+    </div>
+</div>
+
+</br></br></br></br></br>
+
+<div class="w3-display-container w3-padding">
+    <img class="w3-image w3-round " src="Bombers_step2.png" alt="Bombers" width="500" height="400">
+    <div style="padding-left: 550px;" class="w3-display-left">
+        <p><i class="w3-text-grey">
+            The second step is to cross a labyrinth but we can go</br>through the big doors only if we have the bomb in hands</br>
+            So the player will have to throw the bomb over walls.</br>
+            </br>
+            The final step is simple, you have to walk on the slab of your colour while having the bomb</br>in your hands to desactivate the slab and permit your friend to walk on it.</br>
+            If you walk on it without the bomb in hands or if you walk on the wrong color, you are dead.
+
+        </i></p>
+    </div>
+</div>
+
+</br></br></br>
+
+<p class="w3-padding">
+    I began to learn OOP with this project and by having gone through it recently, I can confirm that.</br>
+    However I am happy to see I got better because I think that doing the same project today, I would do things differently.
+</p>
+
+</br></br></br>
