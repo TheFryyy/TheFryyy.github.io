@@ -1,5 +1,31 @@
 <!DOCTYPE html>
-<i>
+<style>
+  #cv:hover #cv {
+    opacity: 0.3;
+  }
+
+  #cvText {
+    display: none;
+    color: white;
+  }
+
+  #cv:hover #cvText {
+    display: block;
+  }
+
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+</style>
 <title>Portfolio/about</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,31 +34,48 @@
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-      <a href="index.html" class="w3-bar-item w3-button"><b>P</b>ortfolio</a>
-      <!-- Float links to the right. Hide them on small screens -->
-      <div class="w3-right w3-hide-small">
-        <a href="school.html" class="w3-bar-item w3-button">School</a>
-        <a href="projects.html" class="w3-bar-item w3-button">Projects</a>
-        <a href="about.html" class="w3-bar-item w3-button">About</a>
-        <a href="https://drive.google.com/file/d/1umWiYqbArmT6-RxetTXA1RkBpMoM4O_e/view?usp=sharing" class="w3-bar-item w3-button">CV</a>
-      </div>
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="index.html" class="w3-bar-item w3-button"><b>P</b>ortfolio</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="school.html" class="w3-bar-item w3-button">School</a>
+      <a href="projects.html" class="w3-bar-item w3-button">Projects</a>
+      <a href="about.html" class="w3-bar-item w3-button">About</a>
+      <a href="https://drive.google.com/file/d/1umWiYqbArmT6-RxetTXA1RkBpMoM4O_e/view?usp=sharing"
+        class="w3-bar-item w3-button">CV</a>
     </div>
+  </div>
 </div>
 
 <div style="padding-left: 50px;" class="w3-container w3-padding-32" id="about">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
-    <div class="w3-display-container w3-padding">
-      <div>
-        <img class="w3-image w3-round " src="photo.png" alt="Bombers" width="100" height="100">
-      </div>
-      <div style="padding-left: 150px;" class="w3-display-left">
-          <p>
-            My name is Julien, I am a french student in the computer science engineering school Efrei paris.</br>
-            I am passionated by video games and I began to learn how to make video games during my free time for 2 years.</br>
-            I began with Unity with which I made some mini games and I recently began to learn Unreal Engine.</br> 
-            I am currently working on a pretty big project of horror game.</br>
+  <h1 class="w3-center w3-border-bottom w3-border-light-grey w3-padding-16">About</h1>
+  <div class="w3-display-container w3-padding">
+    <div class="w3-card" style="width:70%;background-color:rgb(34, 34, 34);margin: auto;">
+      </br></br>
+      <div class="w3-row">
+        <div class="w3-col s2" style="padding-left: 3%;">
+          <img class="w3-image w3-round" src="photo.png" alt="Bombers" width="130" height="130">
+        </div>
+        <div class="w3-container w3-col s10" style="color:white;">
+        </br>
+          <p><i>
+              My name is Julien, I am a french student in the computer science engineering school Efrei paris.</br>
+              I am passionated by video games and I began to learn how to make video games during my free time for 2
+              years.</br>
+              I began with Unity with which I made some mini games and I recently began to learn Unreal Engine.</br>
+            </i>
           </p>
+        </div>
       </div>
+      </br></br>
     </div>
+  </div>
+</div>
+<div class="w3-card" style="width:50%;background-color:rgb(34, 34, 34);margin: auto;">
+  <a href="https://drive.google.com/file/d/1umWiYqbArmT6-RxetTXA1RkBpMoM4O_e/view?usp=sharing">
+    <div id="cv" class="container">
+      <img id="cv" src="cv.png" alt="Person" style="width:100%;">
+      <h1 id="cvText" class="centered"><b>Click to open</b></h1>
+    </div>
+</div>
 </div>
